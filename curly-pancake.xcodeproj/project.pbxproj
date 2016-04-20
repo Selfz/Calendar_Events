@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20482EC21CC7218700F6C3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC11CC7218700F6C3DA /* main.m */; };
+		20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC41CC7218700F6C3DA /* AppDelegate.m */; };
+		20482EC81CC7218700F6C3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC71CC7218700F6C3DA /* ViewController.m */; };
+		20482ECB1CC7218700F6C3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20482EC91CC7218700F6C3DA /* Main.storyboard */; };
+		20482ECD1CC7218700F6C3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20482ECC1CC7218700F6C3DA /* Assets.xcassets */; };
+		20482ED01CC7218700F6C3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */; };
+		20482EDB1CC7218700F6C3DA /* curly_pancakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */; };
+		20482EE61CC7218700F6C3DA /* curly_pancakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20482ED71CC7218700F6C3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20482EB51CC7218700F6C3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20482EBC1CC7218700F6C3DA;
+			remoteInfo = "curly-pancake";
+		};
+		20482EE21CC7218700F6C3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20482EB51CC7218700F6C3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20482EBC1CC7218700F6C3DA;
+			remoteInfo = "curly-pancake";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20482EBD1CC7218700F6C3DA /* curly-pancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "curly-pancake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EC11CC7218700F6C3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20482EC31CC7218700F6C3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20482EC41CC7218700F6C3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20482EC61CC7218700F6C3DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20482EC71CC7218700F6C3DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20482ECA1CC7218700F6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20482ECC1CC7218700F6C3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20482ECF1CC7218700F6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20482ED11CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "curly-pancakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curly_pancakeTests.m; sourceTree = "<group>"; };
+		20482EDC1CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "curly-pancakeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curly_pancakeUITests.m; sourceTree = "<group>"; };
+		20482EE71CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20482EBA1CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED31CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDE1CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20482EB41CC7218700F6C3DA = {
+			isa = PBXGroup;
+			children = (
+				20482EBF1CC7218700F6C3DA /* curly-pancake */,
+				20482ED91CC7218700F6C3DA /* curly-pancakeTests */,
+				20482EE41CC7218700F6C3DA /* curly-pancakeUITests */,
+				20482EBE1CC7218700F6C3DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20482EBE1CC7218700F6C3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20482EBD1CC7218700F6C3DA /* curly-pancake.app */,
+				20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */,
+				20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20482EBF1CC7218700F6C3DA /* curly-pancake */ = {
+			isa = PBXGroup;
+			children = (
+				20482EC31CC7218700F6C3DA /* AppDelegate.h */,
+				20482EC41CC7218700F6C3DA /* AppDelegate.m */,
+				20482EC61CC7218700F6C3DA /* ViewController.h */,
+				20482EC71CC7218700F6C3DA /* ViewController.m */,
+				20482EC91CC7218700F6C3DA /* Main.storyboard */,
+				20482ECC1CC7218700F6C3DA /* Assets.xcassets */,
+				20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */,
+				20482ED11CC7218700F6C3DA /* Info.plist */,
+				20482EC01CC7218700F6C3DA /* Supporting Files */,
+			);
+			path = "curly-pancake";
+			sourceTree = "<group>";
+		};
+		20482EC01CC7218700F6C3DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20482EC11CC7218700F6C3DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20482ED91CC7218700F6C3DA /* curly-pancakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */,
+				20482EDC1CC7218700F6C3DA /* Info.plist */,
+			);
+			path = "curly-pancakeTests";
+			sourceTree = "<group>";
+		};
+		20482EE41CC7218700F6C3DA /* curly-pancakeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */,
+				20482EE71CC7218700F6C3DA /* Info.plist */,
+			);
+			path = "curly-pancakeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20482EBC1CC7218700F6C3DA /* curly-pancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EEA1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancake" */;
+			buildPhases = (
+				20482EB91CC7218700F6C3DA /* Sources */,
+				20482EBA1CC7218700F6C3DA /* Frameworks */,
+				20482EBB1CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "curly-pancake";
+			productName = "curly-pancake";
+			productReference = 20482EBD1CC7218700F6C3DA /* curly-pancake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20482ED51CC7218700F6C3DA /* curly-pancakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EED1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeTests" */;
+			buildPhases = (
+				20482ED21CC7218700F6C3DA /* Sources */,
+				20482ED31CC7218700F6C3DA /* Frameworks */,
+				20482ED41CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20482ED81CC7218700F6C3DA /* PBXTargetDependency */,
+			);
+			name = "curly-pancakeTests";
+			productName = "curly-pancakeTests";
+			productReference = 20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20482EE01CC7218700F6C3DA /* curly-pancakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EF01CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeUITests" */;
+			buildPhases = (
+				20482EDD1CC7218700F6C3DA /* Sources */,
+				20482EDE1CC7218700F6C3DA /* Frameworks */,
+				20482EDF1CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20482EE31CC7218700F6C3DA /* PBXTargetDependency */,
+			);
+			name = "curly-pancakeUITests";
+			productName = "curly-pancakeUITests";
+			productReference = 20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20482EB51CC7218700F6C3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tianshikechuang;
+				TargetAttributes = {
+					20482EBC1CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					20482ED51CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 20482EBC1CC7218700F6C3DA;
+					};
+					20482EE01CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 20482EBC1CC7218700F6C3DA;
+					};
+				};
+			};
+			buildConfigurationList = 20482EB81CC7218700F6C3DA /* Build configuration list for PBXProject "curly-pancake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20482EB41CC7218700F6C3DA;
+			productRefGroup = 20482EBE1CC7218700F6C3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20482EBC1CC7218700F6C3DA /* curly-pancake */,
+				20482ED51CC7218700F6C3DA /* curly-pancakeTests */,
+				20482EE01CC7218700F6C3DA /* curly-pancakeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20482EBB1CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482ED01CC7218700F6C3DA /* LaunchScreen.storyboard in Resources */,
+				20482ECD1CC7218700F6C3DA /* Assets.xcassets in Resources */,
+				20482ECB1CC7218700F6C3DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED41CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDF1CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20482EB91CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482EC81CC7218700F6C3DA /* ViewController.m in Sources */,
+				20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */,
+				20482EC21CC7218700F6C3DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED21CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482EDB1CC7218700F6C3DA /* curly_pancakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDD1CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482EE61CC7218700F6C3DA /* curly_pancakeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20482ED81CC7218700F6C3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20482EBC1CC7218700F6C3DA /* curly-pancake */;
+			targetProxy = 20482ED71CC7218700F6C3DA /* PBXContainerItemProxy */;
+		};
+		20482EE31CC7218700F6C3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20482EBC1CC7218700F6C3DA /* curly-pancake */;
+			targetProxy = 20482EE21CC7218700F6C3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20482EC91CC7218700F6C3DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20482ECA1CC7218700F6C3DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20482ECF1CC7218700F6C3DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20482EE81CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20482EE91CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20482EEB1CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20482EEC1CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20482EEE1CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "curly-pancakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/curly-pancake.app/curly-pancake";
+			};
+			name = Debug;
+		};
+		20482EEF1CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "curly-pancakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/curly-pancake.app/curly-pancake";
+			};
+			name = Release;
+		};
+		20482EF11CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "curly-pancakeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "curly-pancake";
+			};
+			name = Debug;
+		};
+		20482EF21CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "curly-pancakeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "curly-pancake";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20482EB81CC7218700F6C3DA /* Build configuration list for PBXProject "curly-pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EE81CC7218700F6C3DA /* Debug */,
+				20482EE91CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20482EEA1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EEB1CC7218700F6C3DA /* Debug */,
+				20482EEC1CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20482EED1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EEE1CC7218700F6C3DA /* Debug */,
+				20482EEF1CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20482EF01CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EF11CC7218700F6C3DA /* Debug */,
+				20482EF21CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20482EB51CC7218700F6C3DA /* Project object */;
+}
