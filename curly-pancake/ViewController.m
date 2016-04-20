@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "MainTableViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    
+}
+@property(nonatomic, strong) UITableView * tableView;
+
+
 
 @end
 
@@ -16,8 +24,63 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor colorWithRed:0.1 green:0.6 blue:0.8 alpha:1];
+    self.title = @"日历控制器";
+    
+    [self.view addSubview:self.tableView];
+    
+    
+    
 }
+
+
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+    
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString * ID = @"idCell";
+    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    
+    cell.textLabel.text = @"进入日历";
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MainTableViewController * MVC = [[MainTableViewController alloc] init];
+    
+    [self.navigationController pushViewController:MVC animated:YES];
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

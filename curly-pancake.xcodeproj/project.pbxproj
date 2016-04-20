@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20274E441CC7532F00D66DF8 /* AddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E201CC7532F00D66DF8 /* AddTableViewController.m */; };
+		20274E451CC7532F00D66DF8 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E221CC7532F00D66DF8 /* MainTableViewController.m */; };
+		20274E461CC7532F00D66DF8 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E251CC7532F00D66DF8 /* DateModel.m */; };
+		20274E471CC7532F00D66DF8 /* MonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E271CC7532F00D66DF8 /* MonthModel.m */; };
+		20274E481CC7532F00D66DF8 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E291CC7532F00D66DF8 /* TaskModel.m */; };
+		20274E491CC7532F00D66DF8 /* WeekModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E2B1CC7532F00D66DF8 /* WeekModel.m */; };
+		20274E4A1CC7532F00D66DF8 /* ToolCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E2E1CC7532F00D66DF8 /* ToolCalendar.m */; };
+		20274E4B1CC7532F00D66DF8 /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E311CC7532F00D66DF8 /* DateCollectionViewCell.m */; };
+		20274E4C1CC7532F00D66DF8 /* DownCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E331CC7532F00D66DF8 /* DownCollectionViewCell.m */; };
+		20274E4D1CC7532F00D66DF8 /* FYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E351CC7532F00D66DF8 /* FYLayer.m */; };
+		20274E4E1CC7532F00D66DF8 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E371CC7532F00D66DF8 /* HeadView.m */; };
+		20274E4F1CC7532F00D66DF8 /* MonthCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E391CC7532F00D66DF8 /* MonthCollectionViewCell.m */; };
+		20274E501CC7532F00D66DF8 /* TableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E3B1CC7532F00D66DF8 /* TableHeadView.m */; };
+		20274E511CC7532F00D66DF8 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E3D1CC7532F00D66DF8 /* TaskTableViewCell.m */; };
+		20274E521CC7532F00D66DF8 /* UPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E3F1CC7532F00D66DF8 /* UPCollectionViewCell.m */; };
+		20274E531CC7532F00D66DF8 /* WeekCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E411CC7532F00D66DF8 /* WeekCollectionViewCell.m */; };
+		20274E541CC7532F00D66DF8 /* WeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20274E431CC7532F00D66DF8 /* WeekTableViewCell.m */; };
 		20482EC21CC7218700F6C3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC11CC7218700F6C3DA /* main.m */; };
 		20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC41CC7218700F6C3DA /* AppDelegate.m */; };
 		20482EC81CC7218700F6C3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC71CC7218700F6C3DA /* ViewController.m */; };
@@ -35,6 +52,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20274E1F1CC7532F00D66DF8 /* AddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewController.h; sourceTree = "<group>"; };
+		20274E201CC7532F00D66DF8 /* AddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewController.m; sourceTree = "<group>"; };
+		20274E211CC7532F00D66DF8 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		20274E221CC7532F00D66DF8 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		20274E241CC7532F00D66DF8 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
+		20274E251CC7532F00D66DF8 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
+		20274E261CC7532F00D66DF8 /* MonthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthModel.h; sourceTree = "<group>"; };
+		20274E271CC7532F00D66DF8 /* MonthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthModel.m; sourceTree = "<group>"; };
+		20274E281CC7532F00D66DF8 /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		20274E291CC7532F00D66DF8 /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		20274E2A1CC7532F00D66DF8 /* WeekModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekModel.h; sourceTree = "<group>"; };
+		20274E2B1CC7532F00D66DF8 /* WeekModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekModel.m; sourceTree = "<group>"; };
+		20274E2D1CC7532F00D66DF8 /* ToolCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolCalendar.h; sourceTree = "<group>"; };
+		20274E2E1CC7532F00D66DF8 /* ToolCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolCalendar.m; sourceTree = "<group>"; };
+		20274E301CC7532F00D66DF8 /* DateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCollectionViewCell.h; sourceTree = "<group>"; };
+		20274E311CC7532F00D66DF8 /* DateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCollectionViewCell.m; sourceTree = "<group>"; };
+		20274E321CC7532F00D66DF8 /* DownCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownCollectionViewCell.h; sourceTree = "<group>"; };
+		20274E331CC7532F00D66DF8 /* DownCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownCollectionViewCell.m; sourceTree = "<group>"; };
+		20274E341CC7532F00D66DF8 /* FYLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLayer.h; sourceTree = "<group>"; };
+		20274E351CC7532F00D66DF8 /* FYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLayer.m; sourceTree = "<group>"; };
+		20274E361CC7532F00D66DF8 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		20274E371CC7532F00D66DF8 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		20274E381CC7532F00D66DF8 /* MonthCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCollectionViewCell.h; sourceTree = "<group>"; };
+		20274E391CC7532F00D66DF8 /* MonthCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCollectionViewCell.m; sourceTree = "<group>"; };
+		20274E3A1CC7532F00D66DF8 /* TableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeadView.h; sourceTree = "<group>"; };
+		20274E3B1CC7532F00D66DF8 /* TableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeadView.m; sourceTree = "<group>"; };
+		20274E3C1CC7532F00D66DF8 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		20274E3D1CC7532F00D66DF8 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		20274E3E1CC7532F00D66DF8 /* UPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCollectionViewCell.h; sourceTree = "<group>"; };
+		20274E3F1CC7532F00D66DF8 /* UPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCollectionViewCell.m; sourceTree = "<group>"; };
+		20274E401CC7532F00D66DF8 /* WeekCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekCollectionViewCell.h; sourceTree = "<group>"; };
+		20274E411CC7532F00D66DF8 /* WeekCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekCollectionViewCell.m; sourceTree = "<group>"; };
+		20274E421CC7532F00D66DF8 /* WeekTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekTableViewCell.h; sourceTree = "<group>"; };
+		20274E431CC7532F00D66DF8 /* WeekTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekTableViewCell.m; sourceTree = "<group>"; };
 		20482EBD1CC7218700F6C3DA /* curly-pancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "curly-pancake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20482EC11CC7218700F6C3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20482EC31CC7218700F6C3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +129,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20274E1B1CC7532F00D66DF8 /* new */ = {
+			isa = PBXGroup;
+			children = (
+				20274E1E1CC7532F00D66DF8 /* cotroller */,
+				20274E231CC7532F00D66DF8 /* model */,
+				20274E2C1CC7532F00D66DF8 /* tool */,
+				20274E2F1CC7532F00D66DF8 /* view */,
+			);
+			path = new;
+			sourceTree = "<group>";
+		};
+		20274E1E1CC7532F00D66DF8 /* cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				20274E1F1CC7532F00D66DF8 /* AddTableViewController.h */,
+				20274E201CC7532F00D66DF8 /* AddTableViewController.m */,
+				20274E211CC7532F00D66DF8 /* MainTableViewController.h */,
+				20274E221CC7532F00D66DF8 /* MainTableViewController.m */,
+			);
+			path = cotroller;
+			sourceTree = "<group>";
+		};
+		20274E231CC7532F00D66DF8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				20274E241CC7532F00D66DF8 /* DateModel.h */,
+				20274E251CC7532F00D66DF8 /* DateModel.m */,
+				20274E261CC7532F00D66DF8 /* MonthModel.h */,
+				20274E271CC7532F00D66DF8 /* MonthModel.m */,
+				20274E281CC7532F00D66DF8 /* TaskModel.h */,
+				20274E291CC7532F00D66DF8 /* TaskModel.m */,
+				20274E2A1CC7532F00D66DF8 /* WeekModel.h */,
+				20274E2B1CC7532F00D66DF8 /* WeekModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		20274E2C1CC7532F00D66DF8 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				20274E2D1CC7532F00D66DF8 /* ToolCalendar.h */,
+				20274E2E1CC7532F00D66DF8 /* ToolCalendar.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		20274E2F1CC7532F00D66DF8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				20274E301CC7532F00D66DF8 /* DateCollectionViewCell.h */,
+				20274E311CC7532F00D66DF8 /* DateCollectionViewCell.m */,
+				20274E321CC7532F00D66DF8 /* DownCollectionViewCell.h */,
+				20274E331CC7532F00D66DF8 /* DownCollectionViewCell.m */,
+				20274E341CC7532F00D66DF8 /* FYLayer.h */,
+				20274E351CC7532F00D66DF8 /* FYLayer.m */,
+				20274E361CC7532F00D66DF8 /* HeadView.h */,
+				20274E371CC7532F00D66DF8 /* HeadView.m */,
+				20274E381CC7532F00D66DF8 /* MonthCollectionViewCell.h */,
+				20274E391CC7532F00D66DF8 /* MonthCollectionViewCell.m */,
+				20274E3A1CC7532F00D66DF8 /* TableHeadView.h */,
+				20274E3B1CC7532F00D66DF8 /* TableHeadView.m */,
+				20274E3C1CC7532F00D66DF8 /* TaskTableViewCell.h */,
+				20274E3D1CC7532F00D66DF8 /* TaskTableViewCell.m */,
+				20274E3E1CC7532F00D66DF8 /* UPCollectionViewCell.h */,
+				20274E3F1CC7532F00D66DF8 /* UPCollectionViewCell.m */,
+				20274E401CC7532F00D66DF8 /* WeekCollectionViewCell.h */,
+				20274E411CC7532F00D66DF8 /* WeekCollectionViewCell.m */,
+				20274E421CC7532F00D66DF8 /* WeekTableViewCell.h */,
+				20274E431CC7532F00D66DF8 /* WeekTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		20482EB41CC7218700F6C3DA = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +229,7 @@
 				20482EC41CC7218700F6C3DA /* AppDelegate.m */,
 				20482EC61CC7218700F6C3DA /* ViewController.h */,
 				20482EC71CC7218700F6C3DA /* ViewController.m */,
+				20274E1B1CC7532F00D66DF8 /* new */,
 				20482EC91CC7218700F6C3DA /* Main.storyboard */,
 				20482ECC1CC7218700F6C3DA /* Assets.xcassets */,
 				20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */,
@@ -270,9 +395,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20274E471CC7532F00D66DF8 /* MonthModel.m in Sources */,
+				20274E531CC7532F00D66DF8 /* WeekCollectionViewCell.m in Sources */,
+				20274E521CC7532F00D66DF8 /* UPCollectionViewCell.m in Sources */,
+				20274E511CC7532F00D66DF8 /* TaskTableViewCell.m in Sources */,
 				20482EC81CC7218700F6C3DA /* ViewController.m in Sources */,
+				20274E481CC7532F00D66DF8 /* TaskModel.m in Sources */,
 				20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */,
+				20274E4E1CC7532F00D66DF8 /* HeadView.m in Sources */,
+				20274E491CC7532F00D66DF8 /* WeekModel.m in Sources */,
 				20482EC21CC7218700F6C3DA /* main.m in Sources */,
+				20274E4B1CC7532F00D66DF8 /* DateCollectionViewCell.m in Sources */,
+				20274E4D1CC7532F00D66DF8 /* FYLayer.m in Sources */,
+				20274E451CC7532F00D66DF8 /* MainTableViewController.m in Sources */,
+				20274E441CC7532F00D66DF8 /* AddTableViewController.m in Sources */,
+				20274E4F1CC7532F00D66DF8 /* MonthCollectionViewCell.m in Sources */,
+				20274E461CC7532F00D66DF8 /* DateModel.m in Sources */,
+				20274E4C1CC7532F00D66DF8 /* DownCollectionViewCell.m in Sources */,
+				20274E541CC7532F00D66DF8 /* WeekTableViewCell.m in Sources */,
+				20274E4A1CC7532F00D66DF8 /* ToolCalendar.m in Sources */,
+				20274E501CC7532F00D66DF8 /* TableHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +642,7 @@
 				20482EEC1CC7218700F6C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20482EED1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +651,7 @@
 				20482EEF1CC7218700F6C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20482EF01CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +660,7 @@
 				20482EF21CC7218700F6C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
