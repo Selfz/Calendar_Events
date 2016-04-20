@@ -11,24 +11,10 @@
 @interface TaskModel : NSObject <NSCoding>
 
 @property (nonatomic ,assign) int type;
-
 @property (nonatomic ,strong) NSString * content;
 @property (nonatomic ,strong) NSString * adress;
-
 @property (nonatomic ,strong) NSString * time;
-
 @property (nonatomic ,assign) BOOL isShare;
-
-//
-//@property (nonatomic ,strong) NSString * yaoqing;
-//@property (nonatomic ,strong) NSString * tixin;
-//
-//@property (nonatomic ,strong) NSString * url;
-//@property (nonatomic ,strong) NSString * beiZu;
-
-
-
-
 
 
 @end

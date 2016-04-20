@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddTableViewController : UITableViewController
+@interface AddTableViewController : UIViewController
 
 @property (nonatomic ,strong) NSDate * currentDate;
 

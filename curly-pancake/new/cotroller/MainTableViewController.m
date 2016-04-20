@@ -183,7 +183,7 @@
     if (scrollView.contentOffset.y == -64) {
         self.weekCell.hidden = YES;
     }
-    
+  
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -210,13 +210,15 @@
 
             CGFloat space = uph / 6 * [ToolCalendar currentWeekInThisMonth:self.currentDate] - new.y;
             
-            self.weekCell.frame = CGRectMake(0, uph / 6 * [ToolCalendar currentWeekInThisMonth:self.currentDate] - space + 94 - 2, kSize(self.view).width, kSize(self.view).height / 6);
+            self.weekCell.frame = CGRectMake(0, uph / 6 * [ToolCalendar currentWeekInThisMonth:self.currentDate] - space + 94 - 1, kSize(self.view).width, kSize(self.view).height / 6);
 
             
             if (self.isAddView == NO) {
                 [self.tableView addSubview:self.weekCell];
                 self.isAddView = YES;
             }
+            
+            NSLog(@"%f",new.y);
             
             self.weekCell.hidden = NO;
         }else{

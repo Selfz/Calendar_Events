@@ -48,6 +48,7 @@
     return _leftLabel;
 }
 
+
 - (UILabel *)rightLabe{
     if (!_rightLabe) {
         _rightLabe = [[UILabel alloc] initWithFrame:CGRectMake(self.bounds.size.height + 10 , 0, self.bounds.size.width - self.bounds.size.height - 10, self.bounds.size.height)];

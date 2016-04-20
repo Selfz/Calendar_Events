@@ -156,12 +156,12 @@
 - (void)addBodyView{
     
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(kSize([UIScreen mainScreen]).width, 55);
+    flowLayout.itemSize = CGSizeMake(kSize([UIScreen mainScreen]).width, (kSize([UIScreen mainScreen]).width - 50)/6.0);
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     flowLayout.minimumLineSpacing = 0;
     flowLayout.minimumInteritemSpacing = 0;
     
-    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, 55) collectionViewLayout:flowLayout];
+    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, (kSize([UIScreen mainScreen]).width - 50)/6.0) collectionViewLayout:flowLayout];
     
     [collectionView registerClass:[WeekCollectionViewCell class] forCellWithReuseIdentifier:@"cellUp"];
     collectionView.backgroundColor = [UIColor colorWithRed:0.4 green:0.7 blue:0.8 alpha:1];
