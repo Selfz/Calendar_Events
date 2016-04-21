@@ -11,8 +11,6 @@
 #import "HeadView.h"
 #import "TableHeadView.h"
 
-#define XRGB(r,g,b)     [UIColor colorWithRed:(0x##r)/255.0 green:(0x##g)/255.0 blue:(0x##b)/255.0 alpha:1]
-
 
 #import "UPCollectionViewCell.h"
 #import "DownCollectionViewCell.h"
@@ -248,8 +246,6 @@
                 self.isAddView = YES;
             }
             
-            NSLog(@"%f",new.y);
-            
             self.weekCell.hidden = NO;
         }else{
             self.weekCell.hidden = YES;
@@ -301,12 +297,6 @@
     
     self.title = [ToolCalendar dateToStringNODay:self.currentDate];
     
-}
-
-
-- (void)queryButton{
-    
-    NSLog(@"%d-%d---%s",[NSThread currentThread].isMainThread,__LINE__,__func__);
 }
 
 - (void)viewDidAppear:(BOOL)animated{

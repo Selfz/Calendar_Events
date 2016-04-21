@@ -45,15 +45,7 @@
     
     
     if (!self.sourceData.count) {
-        
-        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, kSize(self).width, 60)];
-        [self addSubview:label];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.text = @"无事件";
-        label.font = [UIFont systemFontOfSize:34];
-        label.textColor = [UIColor colorWithRed:0.4 green:0.4 blue:0.4 alpha:1];
-        
-        self.label = label;
+       
         self.label.hidden = NO;
         
     }else{
@@ -80,17 +72,11 @@
 }
 
 
-
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TaskTableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
     TaskModel * model = cell.model;
     
 }
-
-
-
 
 
 
@@ -107,7 +93,7 @@
 
 
 - (void)addTableView{
-    UITableView * table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, kSize([UIScreen mainScreen]).width + 50) style:UITableViewStylePlain];
+    UITableView * table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, self.bounds.size.height) style:UITableViewStyleGrouped];
     self.tableView = table;
     
     table.bounces = NO;
