@@ -10,6 +10,7 @@
 #import "MainTableViewController.h"
 
 
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     
@@ -24,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:0.1 green:0.6 blue:0.8 alpha:1];
+    self.view.backgroundColor = [UIColor grayColor];
     self.title = @"日历控制器";
     
     [self.view addSubview:self.tableView];

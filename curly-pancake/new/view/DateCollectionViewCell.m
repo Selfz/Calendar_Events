@@ -73,6 +73,8 @@
         NSDate * today = [NSDate date];
         if ([[ToolCalendar dateToString:today] isEqualToString:[ToolCalendar dateToString:modelDate]]){
             self.layer.cornerRadius = self.bounds.size.width/2;
+            self.layer.borderWidth = 0.98;
+            self.layer.borderColor = [UIColor colorWithRed:(79/255.0) green:(166/255.0) blue:0.98 alpha:1].CGColor;
             self.backgroundColor = [UIColor clearColor];
             self.tintColor = [UIColor blackColor];
         }else{

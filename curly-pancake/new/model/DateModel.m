@@ -30,8 +30,13 @@
         
         NSString * str = [ToolCalendar getChineseCalendarWithDate:date];
         NSArray * arr = [str componentsSeparatedByString:@"_"];
-        
+
         self.lunarCalendar = [arr lastObject];
+        
+        NSString * strH = [ToolCalendar holidayWithDate:date];
+        if (strH) {
+            self.lunarCalendar = strH;
+        }
     }
     return self;
 }

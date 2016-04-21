@@ -11,6 +11,8 @@
 #import "HeadView.h"
 #import "TableHeadView.h"
 
+#define XRGB(r,g,b)     [UIColor colorWithRed:(0x##r)/255.0 green:(0x##g)/255.0 blue:(0x##b)/255.0 alpha:1]
+
 
 #import "UPCollectionViewCell.h"
 #import "DownCollectionViewCell.h"
@@ -22,6 +24,10 @@
     
 }
 
+@property(nonatomic, assign) CGFloat begin;
+@property(nonatomic, assign) CGFloat end;
+@property(nonatomic, assign) BOOL isWeek;
+
 @property (nonatomic ,strong) NSDate * currentDate;
 @property (nonatomic ,assign) NSInteger currentYear;
 @property (nonatomic ,assign) NSInteger currentMonth;
@@ -31,16 +37,17 @@
 @property(nonatomic, strong) WeekTableViewCell * weekCell;
 @property(nonatomic, strong) UPCollectionViewCell * UPCell;
 @property(nonatomic, assign) BOOL isAddView;
+
+
 @end
 
 @implementation MainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-        
-    
-    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1];
+
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(79/255.0) green:(166/255.0) blue:0.98 alpha:1];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     self.tableView.bounces = NO;
     self.tableView.backgroundColor = [UIColor lightGrayColor];
@@ -52,19 +59,13 @@
     self.title = [ToolCalendar dateToStringNODay:self.currentDate];
     
     
-    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     [button setTitle:@"今" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(todayButton) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem * item1 = [[UIBarButtonItem alloc] initWithCustomView:button];
-    
-    UIButton * button2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-    [button2 setTitle:@"查" forState:UIControlStateNormal];
-    [button2 addTarget:self action:@selector(queryButton) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem * item2 = [[UIBarButtonItem alloc] initWithCustomView:button2];
-    
-    self.navigationItem.rightBarButtonItems = @[item1,item2];
+
+    self.navigationItem.rightBarButtonItems = @[item1];
     
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
@@ -183,8 +184,37 @@
     if (scrollView.contentOffset.y == -64) {
         self.weekCell.hidden = YES;
     }
-  
+    
+    CGPoint point = scrollView.contentOffset;
+    self.end = point.y;
+    
+    CGFloat uph = kMainCellUpH;
+    
+    CGFloat width = uph / 6;
+    
+    if (ABS(self.end - self.begin) > 80) {
+        self.isWeek = !self.isWeek;
+    }
+    
+    if (self.isWeek) {
+        [self.tableView setContentOffset:CGPointMake(0, width * 5 + 3 - 64)];
+       
+    }else{
+//        [UIView animateWithDuration:0.2 animations:^{
+//            [self.tableView setContentOffset:CGPointMake(0, - 64)];
+//        }];
+        [self.tableView setContentOffset:CGPointMake(0, - 64)];
+    }
+
 }
+
+// 开始拖拽时调用该方法
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+    CGPoint point = scrollView.contentOffset;
+    self.begin = point.y;
+}
+
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
@@ -243,6 +273,7 @@
         [_weekCell setDidscroller:^(NSDate *date) {
             weakSelf.currentDate = date;
             weakSelf.UPCell.currentDate = date;
+            weakSelf.title = [ToolCalendar dateToStringNODay:date];
             [weakSelf.UPCell reloadData];
         }];
     }
@@ -268,6 +299,8 @@
     self.weekCell.currentDate = [NSDate date];
     [self.weekCell reloadDate];
     
+    self.title = [ToolCalendar dateToStringNODay:self.currentDate];
+    
 }
 
 
@@ -279,6 +312,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 }
+
 
 
 

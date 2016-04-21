@@ -198,11 +198,9 @@
         d_str = [self getChineseMonthWithDate:date];
     }
     
-    
     NSString *chineseCal_str =[NSString stringWithFormat: @"%@_%@_%@",y_str,m_str,d_str];
- 
-    
-    return chineseCal_str;  
+
+    return chineseCal_str;
 }
 
 
@@ -225,6 +223,179 @@
     return m_str;
     
 }
+
+//获取年月日对象
+
+
+//节日的判断
++ (NSString *)holidayWithDate:(NSDate *)day{
+    //这里来判断节日
+    //今天
+    
+    NSString *str;
+    NSDate *nowDay = [NSDate date];
+    
+    NSCalendar * calendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *calendarToDay  = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:day];
+    
+    NSDateComponents *calendarDay  = [calendar components: NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:nowDay];//今天
+    
+    if (calendarToDay.year == calendarDay.year &&
+        calendarToDay.month == calendarDay.month &&
+        calendarToDay.day == calendarDay.day) {
+        //        str = @"今天";
+        
+    }else if (calendarToDay.month == 1 &&
+              calendarToDay.day == 1){
+        str = @"元旦";
+        
+        //2.14情人节
+    }else if (calendarToDay.month == 2 &&
+              calendarToDay.day == 14){
+        str = @"情人节";
+        
+        //3.8妇女节
+    }else if (calendarToDay.month == 3 &&
+              calendarToDay.day == 8){
+        str = @"妇女节";
+        
+        //3.12 植树节
+    }else if (calendarToDay.month == 3 &&
+              calendarToDay.day == 12){
+        str = @"植树节";
+        
+        //4.1 愚人节
+    }else if (calendarToDay.month == 4 &&
+              calendarToDay.day == 1){
+        str = @"愚人节";
+        
+        //4.5 清明节
+    }else if (calendarToDay.month == 4 &&
+              calendarToDay.day == 4){
+        str = @"清明节";
+        
+        //5.1 劳动节
+    }else if (calendarToDay.month == 5 &&
+              calendarToDay.day == 1){
+        str = @"劳动节";
+        
+        //6.1 儿童节
+    }else if (calendarToDay.month == 6 &&
+              calendarToDay.day == 1){
+        str = @"儿童节";
+        
+        //7.1 建党节
+    }else if (calendarToDay.month == 7 &&
+              calendarToDay.day == 1){
+        str = @"建党节";
+        
+        //8.1 建军节
+    }else if (calendarToDay.month == 8 &&
+              calendarToDay.day == 1){
+        str = @"建军节";
+        
+        //9.10教师节
+    }else if (calendarToDay.month == 9 &&
+              calendarToDay.day == 10){
+        str = @"教师节";
+        
+        //10.1国庆节
+    }else if (calendarToDay.month == 10 &&
+              calendarToDay.day == 1){
+        str = @"国庆节";
+        
+        //11.11光棍节
+    }else if (calendarToDay.month == 11 &&
+              calendarToDay.day == 11){
+        str = @"光棍节";
+        
+        //12.24 平安夜
+    }else if (calendarToDay.month == 12 &&
+              calendarToDay.day == 24){
+        str = @"平安夜";
+        
+        //12.25 圣诞节
+    }else if (calendarToDay.month == 12 &&
+              calendarToDay.day == 25) {
+        str = @"圣诞节";
+        
+    }else{
+        
+        //这里添加其他节日
+        
+    }
+    
+    //获取农历
+    NSString *chineseHoliday = [self getChineseCalendarWithDate:day];
+    
+    NSArray *solarYear_arr= [chineseHoliday componentsSeparatedByString:@"_"];
+    
+    if([solarYear_arr[1]isEqualToString:@"正月"] &&
+       [solarYear_arr[2]isEqualToString:@"正月"]){
+        
+        //正月初一：春节
+        str = @"春节";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"正月"] &&
+             [solarYear_arr[2]isEqualToString:@"十五"]){
+        
+        //正月十五：元宵节
+        str = @"元宵";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"二月"] &&
+             [solarYear_arr[2]isEqualToString:@"初二"]){
+        
+        //二月初二：春龙节(龙抬头)
+        str = @"龙抬头";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"五月"] &&
+             [solarYear_arr[2]isEqualToString:@"初五"]){
+        
+        //五月初五：端午节
+        str = @"端午节";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"七月"] &&
+             [solarYear_arr[2]isEqualToString:@"初七"]){
+        
+        //七月初七：七夕情人节
+        str = @"七夕";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"八月"] &&
+             [solarYear_arr[2]isEqualToString:@"十五"]){
+        
+        //八月十五：中秋节
+        str = @"中秋";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"九月"] &&
+             [solarYear_arr[2]isEqualToString:@"初九"]){
+        
+        //九月初九：重阳节、中国老年节（义务助老活动日）
+        str = @"重阳";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"腊月"] &&
+             [solarYear_arr[2]isEqualToString:@"初八"]){
+        
+        //腊月初八：腊八节
+        str = @"腊八";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"腊月"] &&
+             [solarYear_arr[2]isEqualToString:@"二十四"]){
+        
+        //腊月二十四 小年
+        str = @"小年";
+        
+    }else if([solarYear_arr[1]isEqualToString:@"腊月"] &&
+             [solarYear_arr[2]isEqualToString:@"三十"]){
+        
+        //腊月三十（小月二十九）：除夕
+        str = @"除夕";
+    }
+    
+    //返回节日
+    return str;
+}
+
 
 
 + (NSDate *)DateWithday:(NSInteger )day Month:(NSInteger )month Year:(NSInteger)year{
