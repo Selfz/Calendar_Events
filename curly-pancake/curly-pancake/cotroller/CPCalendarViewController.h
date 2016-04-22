@@ -1,5 +1,5 @@
 //
-//  MainTableViewController.h
+//  CPCalendarViewController.h
 //  Calendar
 //
 //  Created by lushouxiang on 16/1/29.
@@ -14,7 +14,7 @@
 typedef void(^didScroll)(CGPoint contentOffset);
 
 
-@interface MainTableViewController : UITableViewController
+@interface CPCalendarViewController : UITableViewController
 
 
 

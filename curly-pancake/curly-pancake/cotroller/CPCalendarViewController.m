@@ -1,12 +1,12 @@
 //
-//  MainTableViewController.m
+//  CPCalendarViewController.m
 //  Calendar
 //
 //  Created by lushouxiang on 16/1/29.
 //  Copyright © 2016年 zzz. All rights reserved.
 //
 
-#import "MainTableViewController.h"
+#import "CPCalendarViewController.h"
 #import "AddTableViewController.h"
 #import "HeadView.h"
 #import "TableHeadView.h"
@@ -17,7 +17,7 @@
 
 #import "WeekTableViewCell.h"
 
-@interface MainTableViewController ()
+@interface CPCalendarViewController ()
 {
     
 }
@@ -39,7 +39,7 @@
 
 @end
 
-@implementation MainTableViewController
+@implementation CPCalendarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -19,7 +19,7 @@
 		20D1B5E51CC78F9400789D3D /* icon_tianjia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D1B5E21CC78F9400789D3D /* icon_tianjia@2x.png */; };
 		20D1B5E61CC78F9400789D3D /* icon_tianjia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D1B5E31CC78F9400789D3D /* icon_tianjia@3x.png */; };
 		20FC25621CC8EA40008E2198 /* AddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC253E1CC8EA40008E2198 /* AddTableViewController.m */; };
-		20FC25631CC8EA40008E2198 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25401CC8EA40008E2198 /* MainTableViewController.m */; };
+		20FC25631CC8EA40008E2198 /* CPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */; };
 		20FC25641CC8EA40008E2198 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25431CC8EA40008E2198 /* DateModel.m */; };
 		20FC25651CC8EA40008E2198 /* MonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25451CC8EA40008E2198 /* MonthModel.m */; };
 		20FC25661CC8EA40008E2198 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25471CC8EA40008E2198 /* TaskModel.m */; };
@@ -76,8 +76,8 @@
 		20D1B5E31CC78F9400789D3D /* icon_tianjia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tianjia@3x.png"; sourceTree = "<group>"; };
 		20FC253D1CC8EA40008E2198 /* AddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewController.h; sourceTree = "<group>"; };
 		20FC253E1CC8EA40008E2198 /* AddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewController.m; sourceTree = "<group>"; };
-		20FC253F1CC8EA40008E2198 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		20FC25401CC8EA40008E2198 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		20FC253F1CC8EA40008E2198 /* CPCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCalendarViewController.h; sourceTree = "<group>"; };
+		20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCalendarViewController.m; sourceTree = "<group>"; };
 		20FC25421CC8EA40008E2198 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
 		20FC25431CC8EA40008E2198 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
 		20FC25441CC8EA40008E2198 /* MonthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthModel.h; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 			children = (
 				20FC253D1CC8EA40008E2198 /* AddTableViewController.h */,
 				20FC253E1CC8EA40008E2198 /* AddTableViewController.m */,
-				20FC253F1CC8EA40008E2198 /* MainTableViewController.h */,
-				20FC25401CC8EA40008E2198 /* MainTableViewController.m */,
+				20FC253F1CC8EA40008E2198 /* CPCalendarViewController.h */,
+				20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */,
 			);
 			path = cotroller;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				20482EC21CC7218700F6C3DA /* main.m in Sources */,
 				20FC25691CC8EA40008E2198 /* DateCollectionViewCell.m in Sources */,
 				20FC256B1CC8EA40008E2198 /* FYLayer.m in Sources */,
-				20FC25631CC8EA40008E2198 /* MainTableViewController.m in Sources */,
+				20FC25631CC8EA40008E2198 /* CPCalendarViewController.m in Sources */,
 				20FC25621CC8EA40008E2198 /* AddTableViewController.m in Sources */,
 				20FC256D1CC8EA40008E2198 /* MonthCollectionViewCell.m in Sources */,
 				20FC25641CC8EA40008E2198 /* DateModel.m in Sources */,

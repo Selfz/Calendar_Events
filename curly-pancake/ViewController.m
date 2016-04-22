@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MainTableViewController.h"
+#import "CPCalendarViewController.h"
 
 
 
@@ -65,7 +65,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    MainTableViewController * MVC = [[MainTableViewController alloc] init];
+    CPCalendarViewController * MVC = [[CPCalendarViewController alloc] init];
     
     [self.navigationController pushViewController:MVC animated:YES];
     
