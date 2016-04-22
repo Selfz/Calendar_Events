@@ -318,7 +318,7 @@ self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingB
 ![(UICollectionView01-上下拉刷新)](http://images0.cnblogs.com/blog2015/497279/201506/141206080514524.gif)
 
 ## 提醒
-* 本框架纯ARC，兼容的系统>=iOS6.0、iPhone\iPad横竖屏
+* 本框架纯ARC，暂时不支持横屏展示,
 
 ## <a id="期待"></a>期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
