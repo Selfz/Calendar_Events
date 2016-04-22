@@ -4,8 +4,8 @@
 
 ## Contents
 * Getting Started
-    * [Features【支持哪些控件的刷新】](#支持哪些控件的刷新)
-    * [Installation【如何使用MJRefresh】](#如何使用MJRefresh)
+    * [Features【curly-pancake是个什么】](#curly-pancake是个什么)
+    * [Installation【如何使用curly-pancake】](#如何使用curly-pancak)
     * [Who's using【已经超过上百个App正在使用MJRefresh】](#已经超过上百个App正在使用MJRefresh)
     * [Classes【MJRefresh类结构图】](#MJRefresh类结构图)
 * 常见API
@@ -35,23 +35,23 @@
     * [UIWebView01-下拉刷新](#UIWebView01-下拉刷新)
 * [期待](#期待)
 
-## <a id="支持哪些控件的刷新"></a>支持哪些控件的刷新
-* `UIScrollView`、`UITableView`、`UICollectionView`、`UIWebView`
+## <a id="curly-pancake是个什么"></a>curly-pancake是个什么
+* 其实就是一个日历的视图控制器，可以用来做日程管理的。
 
-## <a id="如何使用MJRefresh"></a>如何使用MJRefresh
-* cocoapods导入：`pod 'MJRefresh'`
+## <a id="如何使用curly-pancakh"></a>如何使用curly-pancak
+* cocoapods导入：`pod 'curly-pancakh'`
 * 手动导入：
-    * 将`MJRefresh`文件夹中的所有文件拽入项目中
-    * 导入主头文件：`#import "MJRefresh.h"`
+    * 将`curly-pancakh`文件夹中的所有文件拽入项目中
+    * 导入主头文件：`#import "CPCalendarViewController.h"`
 
-```objc
-Base                        Custom
-MJRefresh.bundle            MJRefresh.h
-MJRefreshConst.h            MJRefreshConst.m
-UIScrollView+MJExtension.h  UIScrollView+MJExtension.m
-UIScrollView+MJRefresh.h    UIScrollView+MJRefresh.m
-UIView+MJExtension.h        UIView+MJExtension.m
-```
+<!--```objc-->
+<!--Base                        Custom-->
+<!--MJRefresh.bundle            MJRefresh.h-->
+<!--MJRefreshConst.h            MJRefreshConst.m-->
+<!--UIScrollView+MJExtension.h  UIScrollView+MJExtension.m-->
+<!--UIScrollView+MJRefresh.h    UIScrollView+MJRefresh.m-->
+<!--UIView+MJExtension.h        UIView+MJExtension.m-->
+<!--```-->
 
 ## <a id="已经超过上百个App正在使用MJRefresh"></a>已经超过上百个App正在使用MJRefresh
 <img src="http://images0.cnblogs.com/blog2015/497279/201506/141212365041650.png" width="200" height="300">
