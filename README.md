@@ -1,7 +1,6 @@
-![(logo)](http://images.cnitblog.com/blog2015/497279/201505/051004492043385.png)
-## MJRefresh
-* An easy way to use pull-to-refresh
-* 用法简单的下拉刷新框架：一行代码搞定
+![(logo)](http://a1.qpic.cn/psb?/V14KCrca0Bom6u/eZ7E9uvIqmpK6mHm9eRs2mmKSOz*HHlZ7Dh9yoFisj4!/b/dHEBAAAAAAAA&bo=gACAAAAAAAADByI!&rf=viewer_4)
+## curly-pancake
+* An easy way to use load Calendar view
 
 ## Contents
 * Getting Started
