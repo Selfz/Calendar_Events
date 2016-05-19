@@ -28,7 +28,6 @@
 
 - (void)setModel:(MonthModel *)model{
     _model = model;
-    
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self addBodyView];
 }
