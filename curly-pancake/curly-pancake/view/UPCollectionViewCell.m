@@ -24,7 +24,7 @@
 @property (nonatomic ,strong) MonthModel * leftModel;
 @property (nonatomic ,strong) MonthModel * rightModel;
 
-@property (nonatomic ,strong) UICollectionView * collectionView;
+@property (nonatomic ,weak) UICollectionView * collectionView;
 
 
 
@@ -34,12 +34,17 @@
 @implementation UPCollectionViewCell
 
 
+static NSString *  MonthID = @"MonthID";
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 
         self.currentDate = [NSDate date];
+        _leftModel = [MonthModel monthModelWithDate:[ToolCalendar lastMonth:self.currentDate]];
+        _currentModel = [MonthModel monthModelWithDate:self.currentDate];
+        _rightModel = [MonthModel monthModelWithDate:[ToolCalendar nextMonth:self.currentDate]];
+        
         
         [self addBodyView];
 
@@ -62,10 +67,18 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    MonthCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellUp" forIndexPath:indexPath];
-    cell.currentDate = self.currentDate;
+    MonthCollectionViewCell * cell1 = [collectionView dequeueReusableCellWithReuseIdentifier:MonthID forIndexPath:indexPath];
     
-    [cell setDidSelectDate:^(NSDate *date) {
+    return cell1;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    MonthCollectionViewCell * cell1 = (MonthCollectionViewCell *)cell;
+    
+    cell1.currentDate = self.currentDate;
+    
+    [cell1 setDidSelectDate:^(NSDate *date) {
         self.currentDate = date;
         if (self.didscroller) {
             self.didscroller(self.currentDate);
@@ -73,16 +86,18 @@
     }];
     
     if (indexPath.row == 0) {
-        cell.model = self.leftModel;
+        cell1.model = self.leftModel;
         
     }else if (indexPath.row == 1){
-        cell.model = self.currentModel;
+        cell1.model = self.currentModel;
         
     }else{
-        cell.model = self.rightModel;
+        cell1.model = self.rightModel;
     }
-    return cell;
+    
 }
+
+
 
 
 
@@ -90,23 +105,23 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
     if (scrollView.contentOffset.x < kSize([UIScreen mainScreen]).width) {
-        
         if ([ToolCalendar isSameMonthWithToday:[ToolCalendar lastMonth:self.currentDate]]) {
-            self.currentDate = [NSDate date];
-        }else{
-           self.currentDate = [ToolCalendar firstDayOfCurrentMonth:[ToolCalendar lastMonth:self.currentDate]];
-        }
-        
+                self.currentDate = [NSDate date];
+
+            }else{
+                self.currentDate = [ToolCalendar firstDayOfCurrentMonth:[ToolCalendar lastMonth:self.currentDate]];
+            }
+
         
     }else if (scrollView.contentOffset.x > kSize([UIScreen mainScreen]).width){
-        if ([ToolCalendar isSameMonthWithToday:[ToolCalendar nextMonth:self.currentDate]]) {
-            self.currentDate = [NSDate date];
-        }else{
-            self.currentDate = [ToolCalendar firstDayOfCurrentMonth:[ToolCalendar nextMonth:self.currentDate]];
-        }
+
+            if ([ToolCalendar isSameMonthWithToday:[ToolCalendar nextMonth:self.currentDate]]) {
+                self.currentDate = [NSDate date];
+            }else{
+                self.currentDate = [ToolCalendar firstDayOfCurrentMonth:[ToolCalendar nextMonth:self.currentDate]];
+            }
     }
     
-    [self.collectionView reloadData];
     [self.collectionView setContentOffset:CGPointMake(kSize([UIScreen mainScreen]).width, 0)];
     
     if (self.didscroller) {
@@ -123,38 +138,27 @@
     self.currentModel = [MonthModel monthModelWithDate:_currentDate];
     self.leftModel = [MonthModel monthModelWithDate:[ToolCalendar lastMonth:_currentDate]];
     self.rightModel = [MonthModel monthModelWithDate:[ToolCalendar nextMonth:_currentDate]];
-    [self.collectionView reloadData];
 }
 
 
-- (MonthModel *)leftModel{
-    if (!_leftModel) {
-        _leftModel = [MonthModel monthModelWithDate:[ToolCalendar lastMonth:self.currentDate]];
-    }
-    return _leftModel;
-}
 
 
-- (MonthModel *)currentModel{
-    if (!_currentModel) {
-        _currentModel = [MonthModel monthModelWithDate:self.currentDate];
-    }
-    return _currentModel;
-}
 
 
-- (MonthModel *)rightModel{
-    if (!_rightModel) {
-        _rightModel = [MonthModel monthModelWithDate:[ToolCalendar nextMonth:self.currentDate]];
-    }
-    return _rightModel;
-}
+
+
+
+
+
+
+
+
 
 
 
 - (void)addBodyView{
     
-    FYLayer * flowLayout = [[FYLayer alloc] init];
+    UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = CGSizeMake(kSize([UIScreen mainScreen]).width, kSize([UIScreen mainScreen]).width - 50);
 
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -163,7 +167,7 @@
     
     UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, kSize([UIScreen mainScreen]).width - 50) collectionViewLayout:flowLayout];
     
-    [collectionView registerClass:[MonthCollectionViewCell class] forCellWithReuseIdentifier:@"cellUp"];
+    [collectionView registerClass:[MonthCollectionViewCell class] forCellWithReuseIdentifier:MonthID];
     collectionView.backgroundColor = [UIColor colorWithRed:0.4 green:0.7 blue:0.8 alpha:1];
     collectionView.pagingEnabled = YES;
     collectionView.delegate = self;

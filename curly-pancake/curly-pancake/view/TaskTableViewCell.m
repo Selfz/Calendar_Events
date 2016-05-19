@@ -20,13 +20,6 @@
 
 @implementation TaskTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-
-
-
 
 - (void)setModel:(TaskModel *)model{
     _model = model;

@@ -24,18 +24,7 @@
 
 @implementation WeekTableViewCell
 
-//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-//    
-//    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-//        
-//        self.currentDate = [NSDate date];
-//        
-//        [self addBodyView];
-//        
-//    }
-//    return self;
-//}
-
+static NSString * WeekID = @"WeekID";
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.currentDate = [NSDate date];
@@ -62,10 +51,18 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    WeekCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellUp" forIndexPath:indexPath];
-    cell.currentDate = self.currentDate;
+    WeekCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:WeekID forIndexPath:indexPath];
+
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    [cell setDidSelectDate:^(NSDate *date) {
+    WeekCollectionViewCell * weekCell = (WeekCollectionViewCell *)cell;
+    
+    weekCell.currentDate = self.currentDate;
+    
+    [weekCell setDidSelectDate:^(NSDate *date) {
         self.currentDate = date;
         
         if (self.didscroller) {
@@ -74,16 +71,18 @@
     }];
     
     if (indexPath.row == 0) {
-        cell.model = self.leftModel;
+        weekCell.model = self.leftModel;
         
     }else if (indexPath.row == 1){
-        cell.model = self.currentModel;
+        weekCell.model = self.currentModel;
         
     }else{
-        cell.model = self.rightModel;
+        weekCell.model = self.rightModel;
     }
-    return cell;
+    
+    
 }
+
 
 
 
@@ -163,7 +162,7 @@
     
     UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, (kSize([UIScreen mainScreen]).width - 50)/6.0) collectionViewLayout:flowLayout];
     
-    [collectionView registerClass:[WeekCollectionViewCell class] forCellWithReuseIdentifier:@"cellUp"];
+    [collectionView registerClass:[WeekCollectionViewCell class] forCellWithReuseIdentifier:WeekID];
     collectionView.backgroundColor = [UIColor colorWithRed:0.4 green:0.7 blue:0.8 alpha:1];
     collectionView.pagingEnabled = YES;
     collectionView.delegate = self;

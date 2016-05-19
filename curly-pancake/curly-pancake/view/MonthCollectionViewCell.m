@@ -15,30 +15,26 @@
 
 @property (nonatomic ,strong) didSelectDate selectDate;
 
+@property(nonatomic, strong) NSIndexPath * oldIndex;
+
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+
 @end
 
 
 @implementation MonthCollectionViewCell
 
 
-- (instancetype)initWithFrame:(CGRect)frame{
-    
-    if (self = [super initWithFrame:frame]) {
-        [self addBodyView];
-        
-    }
-    
-    return self;
-}
-
-
 - (void)setModel:(MonthModel *)model{
     _model = model;
-
+    
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self addBodyView];
 }
 
 - (void)setDidSelectDate:(didSelectDate)selectDate{
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     _selectDate = selectDate;
 }
 
@@ -58,23 +54,30 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    DateCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellUp" forIndexPath:indexPath];
+    DateCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellID forIndexPath:indexPath];
+
+    return cell;
+  
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    DateCollectionViewCell * dateCell = (DateCollectionViewCell *)cell;
     
     DateModel * dateModel = self.model.dates[0];
     NSInteger firstWeak = dateModel.weak;
     cell.hidden = NO;
     
     if (indexPath.row >= firstWeak) {
-        cell.dateModel = self.model.dates[indexPath.row - firstWeak];
-        cell.currentDate = self.currentDate;
+        
+        dateCell.dateModel = self.model.dates[indexPath.row - firstWeak];
+        dateCell.currentDate = self.currentDate;
     }else{
-        cell.hidden = YES;
+        dateCell.hidden = YES;
     }
+    
 
-    
-    return cell;
-    
-    
     
 }
 
@@ -91,9 +94,8 @@
     }
     
     [collectionView reloadData];
+    
 }
-
-
 
 
 - (void)addBodyView{
@@ -106,16 +108,19 @@
     
     UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kSize([UIScreen mainScreen]).width, kSize([UIScreen mainScreen]).width - 50) collectionViewLayout:flowLayout];
     
-    [collectionView registerClass:[DateCollectionViewCell class] forCellWithReuseIdentifier:@"cellUp"];
+    [collectionView registerClass:[DateCollectionViewCell class] forCellWithReuseIdentifier:CellID];
     
     collectionView.backgroundColor = [UIColor whiteColor];
     collectionView.pagingEnabled = YES;
     collectionView.delegate = self;
     collectionView.dataSource  = self;
     collectionView.showsVerticalScrollIndicator = NO;
-    
+
     [self addSubview:collectionView];
 }
+
+
+
 
 
 

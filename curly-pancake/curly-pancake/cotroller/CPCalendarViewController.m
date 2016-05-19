@@ -33,7 +33,8 @@
 @property (nonatomic ,strong) NSArray * currentWeeks;
 
 @property(nonatomic, strong) WeekTableViewCell * weekCell;
-@property(nonatomic, strong) UPCollectionViewCell * UPCell;
+@property(nonatomic, weak) UPCollectionViewCell * UPCell;
+@property(nonatomic, weak) DownCollectionViewCell * DownCell;
 @property(nonatomic, assign) BOOL isAddView;
 
 
@@ -86,16 +87,37 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell;
- 
+    
     if (indexPath.section == 0) {
+        UPCollectionViewCell * UPcell = [[UPCollectionViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UPcell"];
+        cell = UPcell;
+        self.UPCell = UPcell;
+        
+    }else{
+        DownCollectionViewCell * Downcell = [[DownCollectionViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = Downcell;
+        self.DownCell = Downcell;
+    }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    cell.backgroundColor = [UIColor whiteColor];
+    
+    return cell;
+}
 
-
-        UPCollectionViewCell * UPcell = [[UPCollectionViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 0) {
+        
+        UPCollectionViewCell *UPcell = (UPCollectionViewCell *)cell;
         UPcell.currentModel = [MonthModel monthModelWithDate:self.currentDate];
         UPcell.currentDate = self.currentDate;
         
         [UPcell setDidscroller:^(NSDate *date) {
+            
             self.weekCell.currentDate = date;
             self.currentDate = date;
             self.currentYear = [ToolCalendar year:date];
@@ -107,27 +129,17 @@
             }
             
             [tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:1]] withRowAnimation:UITableViewRowAnimationFade];
-            
-            
         }];
-
         
-        cell = UPcell;
-        self.UPCell = UPcell;
-
     }else{
-        DownCollectionViewCell * Downcell = [[DownCollectionViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        DownCollectionViewCell * Downcell = (DownCollectionViewCell *)cell;
         Downcell.currentDate = self.currentDate;
         Downcell.superVC = self;
-        cell = Downcell;
     }
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
-    cell.backgroundColor = [UIColor whiteColor];
-
-    return cell;
+    
 }
+
 
 
 
@@ -198,9 +210,7 @@
         [self.tableView setContentOffset:CGPointMake(0, width * 5 + 3 - 64)];
        
     }else{
-//        [UIView animateWithDuration:0.2 animations:^{
-//            [self.tableView setContentOffset:CGPointMake(0, - 64)];
-//        }];
+        
         [self.tableView setContentOffset:CGPointMake(0, - 64)];
     }
 
@@ -268,21 +278,16 @@
         __block typeof(self) weakSelf = self;
         [_weekCell setDidscroller:^(NSDate *date) {
             weakSelf.currentDate = date;
-            weakSelf.UPCell.currentDate = date;
+            [weakSelf.UPCell setCurrentDate:date];
             weakSelf.title = [ToolCalendar dateToStringNODay:date];
             [weakSelf.UPCell reloadData];
+            [weakSelf.DownCell reloadData];
         }];
     }
     return _weekCell;
 }
 
 
-- (void)setCurrentDate:(NSDate *)currentDate{
-    _currentDate = currentDate;
-    self.weekCell.currentDate = currentDate;
-    self.UPCell.currentDate = currentDate;
-
-}
 
 
 - (void)todayButton{
