@@ -7,6 +7,8 @@
 //
 
 #import "DateCollectionViewCell.h"
+#define donwLabel_font 9
+#define upLabel_font 18
 
 @interface DateCollectionViewCell ()
 {
@@ -17,6 +19,7 @@
 @property (nonatomic ,strong) UILabel * downLabel;
 @property (nonatomic ,strong) UILabel * pointLabel;
 
+@property(nonatomic, strong) NSDate * Today;
 
 @end
 
@@ -29,7 +32,7 @@
     
     if (self = [super initWithFrame:frame]) {
 
-        
+        self.Today = [NSDate date];
     }
     
     return self;
@@ -70,8 +73,7 @@
         
     }else{
         
-        NSDate * today = [NSDate date];
-        if ([[ToolCalendar dateToString:today] isEqualToString:[ToolCalendar dateToString:modelDate]]){
+        if ([[ToolCalendar dateToString:self.Today] isEqualToString:[ToolCalendar dateToString:modelDate]]){
             self.layer.cornerRadius = self.bounds.size.width/2;
             self.layer.borderWidth = 0.98;
             self.layer.borderColor = [UIColor colorWithRed:(79/255.0) green:(166/255.0) blue:0.98 alpha:1].CGColor;
@@ -92,14 +94,12 @@
 }
 
 
-
-
 - (UILabel *)upLabel{
     
     if (!_upLabel) {
         _upLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.bounds.size.width, self.bounds.size.height/2-3)];
         _upLabel.textAlignment = NSTextAlignmentCenter;
-        _upLabel.font = [UIFont systemFontOfSize:22];
+        _upLabel.font = [UIFont systemFontOfSize:upLabel_font];
         [self addSubview:_upLabel];
     }
     return _upLabel;
@@ -109,7 +109,7 @@
     if (!_downLabel) {
         _downLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.bounds.size.height/2 + 3, self.bounds.size.width, self.bounds.size.height/2 - 8)];
         _downLabel.textAlignment = NSTextAlignmentCenter;
-        _downLabel.font = [UIFont systemFontOfSize:10];
+        _downLabel.font = [UIFont systemFontOfSize:donwLabel_font];
         [self addSubview:_downLabel];
     }
     return _downLabel;

@@ -20,4 +20,7 @@
 @property (nonatomic ,weak) UIViewController *superVC;
 
 
+
+- (void)reloadData;
+
 @end

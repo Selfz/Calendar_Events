@@ -11,6 +11,8 @@
 #import "DateModel.h"
 
 
+#define CellID @"DateCellID"
+
 @interface DateCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic ,strong) DateModel * dateModel;

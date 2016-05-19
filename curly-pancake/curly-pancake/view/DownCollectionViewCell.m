@@ -65,16 +65,17 @@
     
     TaskTableViewCell * cell = [[TaskTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"zzz"];
 
-    
     cell.model = self.sourceData[indexPath.row];
 
     return cell;
 }
 
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    TaskTableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
-    TaskModel * model = cell.model;
+    
+//    TaskTableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
+//    TaskModel * model = cell.model;
     
 }
 
@@ -106,7 +107,9 @@
 }
 
 
-
+- (void)reloadData{
+    [self.tableView reloadData];
+}
 
 
 @end
