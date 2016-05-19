@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2011A67C1CC9C099009C8FB2 /* DataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2011A67B1CC9C099009C8FB2 /* DataTool.m */; };
+		20482EC21CC7218700F6C3DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC11CC7218700F6C3DA /* main.m */; };
+		20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC41CC7218700F6C3DA /* AppDelegate.m */; };
+		20482EC81CC7218700F6C3DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EC71CC7218700F6C3DA /* ViewController.m */; };
+		20482ECB1CC7218700F6C3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20482EC91CC7218700F6C3DA /* Main.storyboard */; };
+		20482ECD1CC7218700F6C3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20482ECC1CC7218700F6C3DA /* Assets.xcassets */; };
+		20482ED01CC7218700F6C3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */; };
+		20482EDB1CC7218700F6C3DA /* curly_pancakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */; };
+		20482EE61CC7218700F6C3DA /* curly_pancakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */; };
+		20D1B5E41CC78F9400789D3D /* icon_tianjia.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D1B5E11CC78F9400789D3D /* icon_tianjia.png */; };
+		20D1B5E51CC78F9400789D3D /* icon_tianjia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D1B5E21CC78F9400789D3D /* icon_tianjia@2x.png */; };
+		20D1B5E61CC78F9400789D3D /* icon_tianjia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D1B5E31CC78F9400789D3D /* icon_tianjia@3x.png */; };
+		20FC25621CC8EA40008E2198 /* AddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC253E1CC8EA40008E2198 /* AddTableViewController.m */; };
+		20FC25631CC8EA40008E2198 /* CPCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */; };
+		20FC25641CC8EA40008E2198 /* DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25431CC8EA40008E2198 /* DateModel.m */; };
+		20FC25651CC8EA40008E2198 /* MonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25451CC8EA40008E2198 /* MonthModel.m */; };
+		20FC25661CC8EA40008E2198 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25471CC8EA40008E2198 /* TaskModel.m */; };
+		20FC25671CC8EA40008E2198 /* WeekModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25491CC8EA40008E2198 /* WeekModel.m */; };
+		20FC25681CC8EA40008E2198 /* ToolCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC254C1CC8EA40008E2198 /* ToolCalendar.m */; };
+		20FC25691CC8EA40008E2198 /* DateCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC254F1CC8EA40008E2198 /* DateCollectionViewCell.m */; };
+		20FC256A1CC8EA40008E2198 /* DownCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25511CC8EA40008E2198 /* DownCollectionViewCell.m */; };
+		20FC256B1CC8EA40008E2198 /* FYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25531CC8EA40008E2198 /* FYLayer.m */; };
+		20FC256C1CC8EA40008E2198 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25551CC8EA40008E2198 /* HeadView.m */; };
+		20FC256D1CC8EA40008E2198 /* MonthCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25571CC8EA40008E2198 /* MonthCollectionViewCell.m */; };
+		20FC256E1CC8EA40008E2198 /* TableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25591CC8EA40008E2198 /* TableHeadView.m */; };
+		20FC256F1CC8EA40008E2198 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC255B1CC8EA40008E2198 /* TaskTableViewCell.m */; };
+		20FC25701CC8EA40008E2198 /* UPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC255D1CC8EA40008E2198 /* UPCollectionViewCell.m */; };
+		20FC25711CC8EA40008E2198 /* WeekCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC255F1CC8EA40008E2198 /* WeekCollectionViewCell.m */; };
+		20FC25721CC8EA40008E2198 /* WeekTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC25611CC8EA40008E2198 /* WeekTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20482ED71CC7218700F6C3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20482EB51CC7218700F6C3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20482EBC1CC7218700F6C3DA;
+			remoteInfo = "curly-pancake";
+		};
+		20482EE21CC7218700F6C3DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20482EB51CC7218700F6C3DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20482EBC1CC7218700F6C3DA;
+			remoteInfo = "curly-pancake";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2011A67A1CC9C099009C8FB2 /* DataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTool.h; sourceTree = "<group>"; };
+		2011A67B1CC9C099009C8FB2 /* DataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTool.m; sourceTree = "<group>"; };
+		20482EBD1CC7218700F6C3DA /* curly-pancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "curly-pancake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EC11CC7218700F6C3DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20482EC31CC7218700F6C3DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20482EC41CC7218700F6C3DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20482EC61CC7218700F6C3DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20482EC71CC7218700F6C3DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20482ECA1CC7218700F6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20482ECC1CC7218700F6C3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20482ECF1CC7218700F6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20482ED11CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "curly-pancakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curly_pancakeTests.m; sourceTree = "<group>"; };
+		20482EDC1CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "curly-pancakeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curly_pancakeUITests.m; sourceTree = "<group>"; };
+		20482EE71CC7218700F6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D1B5E11CC78F9400789D3D /* icon_tianjia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tianjia.png; sourceTree = "<group>"; };
+		20D1B5E21CC78F9400789D3D /* icon_tianjia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tianjia@2x.png"; sourceTree = "<group>"; };
+		20D1B5E31CC78F9400789D3D /* icon_tianjia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tianjia@3x.png"; sourceTree = "<group>"; };
+		20FC253D1CC8EA40008E2198 /* AddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableViewController.h; sourceTree = "<group>"; };
+		20FC253E1CC8EA40008E2198 /* AddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableViewController.m; sourceTree = "<group>"; };
+		20FC253F1CC8EA40008E2198 /* CPCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCalendarViewController.h; sourceTree = "<group>"; };
+		20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCalendarViewController.m; sourceTree = "<group>"; };
+		20FC25421CC8EA40008E2198 /* DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateModel.h; sourceTree = "<group>"; };
+		20FC25431CC8EA40008E2198 /* DateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateModel.m; sourceTree = "<group>"; };
+		20FC25441CC8EA40008E2198 /* MonthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthModel.h; sourceTree = "<group>"; };
+		20FC25451CC8EA40008E2198 /* MonthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthModel.m; sourceTree = "<group>"; };
+		20FC25461CC8EA40008E2198 /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		20FC25471CC8EA40008E2198 /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		20FC25481CC8EA40008E2198 /* WeekModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekModel.h; sourceTree = "<group>"; };
+		20FC25491CC8EA40008E2198 /* WeekModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekModel.m; sourceTree = "<group>"; };
+		20FC254B1CC8EA40008E2198 /* ToolCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolCalendar.h; sourceTree = "<group>"; };
+		20FC254C1CC8EA40008E2198 /* ToolCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolCalendar.m; sourceTree = "<group>"; };
+		20FC254E1CC8EA40008E2198 /* DateCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCollectionViewCell.h; sourceTree = "<group>"; };
+		20FC254F1CC8EA40008E2198 /* DateCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCollectionViewCell.m; sourceTree = "<group>"; };
+		20FC25501CC8EA40008E2198 /* DownCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownCollectionViewCell.h; sourceTree = "<group>"; };
+		20FC25511CC8EA40008E2198 /* DownCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownCollectionViewCell.m; sourceTree = "<group>"; };
+		20FC25521CC8EA40008E2198 /* FYLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLayer.h; sourceTree = "<group>"; };
+		20FC25531CC8EA40008E2198 /* FYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FYLayer.m; path = "curly-pancake/view/FYLayer.m"; sourceTree = "<group>"; };
+		20FC25541CC8EA40008E2198 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		20FC25551CC8EA40008E2198 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
+		20FC25561CC8EA40008E2198 /* MonthCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCollectionViewCell.h; sourceTree = "<group>"; };
+		20FC25571CC8EA40008E2198 /* MonthCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCollectionViewCell.m; sourceTree = "<group>"; };
+		20FC25581CC8EA40008E2198 /* TableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeadView.h; sourceTree = "<group>"; };
+		20FC25591CC8EA40008E2198 /* TableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeadView.m; sourceTree = "<group>"; };
+		20FC255A1CC8EA40008E2198 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		20FC255B1CC8EA40008E2198 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		20FC255C1CC8EA40008E2198 /* UPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCollectionViewCell.h; sourceTree = "<group>"; };
+		20FC255D1CC8EA40008E2198 /* UPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCollectionViewCell.m; sourceTree = "<group>"; };
+		20FC255E1CC8EA40008E2198 /* WeekCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekCollectionViewCell.h; sourceTree = "<group>"; };
+		20FC255F1CC8EA40008E2198 /* WeekCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekCollectionViewCell.m; sourceTree = "<group>"; };
+		20FC25601CC8EA40008E2198 /* WeekTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekTableViewCell.h; sourceTree = "<group>"; };
+		20FC25611CC8EA40008E2198 /* WeekTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20482EBA1CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED31CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDE1CC7218700F6C3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20482EB41CC7218700F6C3DA = {
+			isa = PBXGroup;
+			children = (
+				20482EBF1CC7218700F6C3DA /* curly-pancake */,
+				20482ED91CC7218700F6C3DA /* curly-pancakeTests */,
+				20482EE41CC7218700F6C3DA /* curly-pancakeUITests */,
+				20482EBE1CC7218700F6C3DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20482EBE1CC7218700F6C3DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20482EBD1CC7218700F6C3DA /* curly-pancake.app */,
+				20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */,
+				20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20482EBF1CC7218700F6C3DA /* curly-pancake */ = {
+			isa = PBXGroup;
+			children = (
+				20482EC31CC7218700F6C3DA /* AppDelegate.h */,
+				20482EC41CC7218700F6C3DA /* AppDelegate.m */,
+				20482EC61CC7218700F6C3DA /* ViewController.h */,
+				20482EC71CC7218700F6C3DA /* ViewController.m */,
+				20FC25531CC8EA40008E2198 /* FYLayer.m */,
+				20482EC91CC7218700F6C3DA /* Main.storyboard */,
+				20FC253B1CC8EA40008E2198 /* curly-pancake */,
+				20482ECC1CC7218700F6C3DA /* Assets.xcassets */,
+				20D1B5E11CC78F9400789D3D /* icon_tianjia.png */,
+				20D1B5E21CC78F9400789D3D /* icon_tianjia@2x.png */,
+				20D1B5E31CC78F9400789D3D /* icon_tianjia@3x.png */,
+				20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */,
+				20482ED11CC7218700F6C3DA /* Info.plist */,
+				20482EC01CC7218700F6C3DA /* Supporting Files */,
+			);
+			path = "curly-pancake";
+			sourceTree = "<group>";
+		};
+		20482EC01CC7218700F6C3DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20482EC11CC7218700F6C3DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20482ED91CC7218700F6C3DA /* curly-pancakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				20482EDA1CC7218700F6C3DA /* curly_pancakeTests.m */,
+				20482EDC1CC7218700F6C3DA /* Info.plist */,
+			);
+			path = "curly-pancakeTests";
+			sourceTree = "<group>";
+		};
+		20482EE41CC7218700F6C3DA /* curly-pancakeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20482EE51CC7218700F6C3DA /* curly_pancakeUITests.m */,
+				20482EE71CC7218700F6C3DA /* Info.plist */,
+			);
+			path = "curly-pancakeUITests";
+			sourceTree = "<group>";
+		};
+		20FC253B1CC8EA40008E2198 /* curly-pancake */ = {
+			isa = PBXGroup;
+			children = (
+				20FC253C1CC8EA40008E2198 /* cotroller */,
+				20FC25411CC8EA40008E2198 /* model */,
+				20FC254A1CC8EA40008E2198 /* tool */,
+				20FC254D1CC8EA40008E2198 /* view */,
+			);
+			path = "curly-pancake";
+			sourceTree = "<group>";
+		};
+		20FC253C1CC8EA40008E2198 /* cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				20FC253D1CC8EA40008E2198 /* AddTableViewController.h */,
+				20FC253E1CC8EA40008E2198 /* AddTableViewController.m */,
+				20FC253F1CC8EA40008E2198 /* CPCalendarViewController.h */,
+				20FC25401CC8EA40008E2198 /* CPCalendarViewController.m */,
+			);
+			path = cotroller;
+			sourceTree = "<group>";
+		};
+		20FC25411CC8EA40008E2198 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				20FC25421CC8EA40008E2198 /* DateModel.h */,
+				20FC25431CC8EA40008E2198 /* DateModel.m */,
+				20FC25441CC8EA40008E2198 /* MonthModel.h */,
+				20FC25451CC8EA40008E2198 /* MonthModel.m */,
+				20FC25461CC8EA40008E2198 /* TaskModel.h */,
+				20FC25471CC8EA40008E2198 /* TaskModel.m */,
+				20FC25481CC8EA40008E2198 /* WeekModel.h */,
+				20FC25491CC8EA40008E2198 /* WeekModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		20FC254A1CC8EA40008E2198 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				20FC254B1CC8EA40008E2198 /* ToolCalendar.h */,
+				20FC254C1CC8EA40008E2198 /* ToolCalendar.m */,
+				2011A67A1CC9C099009C8FB2 /* DataTool.h */,
+				2011A67B1CC9C099009C8FB2 /* DataTool.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		20FC254D1CC8EA40008E2198 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				20FC254E1CC8EA40008E2198 /* DateCollectionViewCell.h */,
+				20FC254F1CC8EA40008E2198 /* DateCollectionViewCell.m */,
+				20FC25501CC8EA40008E2198 /* DownCollectionViewCell.h */,
+				20FC25511CC8EA40008E2198 /* DownCollectionViewCell.m */,
+				20FC25521CC8EA40008E2198 /* FYLayer.h */,
+				20FC25541CC8EA40008E2198 /* HeadView.h */,
+				20FC25551CC8EA40008E2198 /* HeadView.m */,
+				20FC25561CC8EA40008E2198 /* MonthCollectionViewCell.h */,
+				20FC25571CC8EA40008E2198 /* MonthCollectionViewCell.m */,
+				20FC25581CC8EA40008E2198 /* TableHeadView.h */,
+				20FC25591CC8EA40008E2198 /* TableHeadView.m */,
+				20FC255A1CC8EA40008E2198 /* TaskTableViewCell.h */,
+				20FC255B1CC8EA40008E2198 /* TaskTableViewCell.m */,
+				20FC255C1CC8EA40008E2198 /* UPCollectionViewCell.h */,
+				20FC255D1CC8EA40008E2198 /* UPCollectionViewCell.m */,
+				20FC255E1CC8EA40008E2198 /* WeekCollectionViewCell.h */,
+				20FC255F1CC8EA40008E2198 /* WeekCollectionViewCell.m */,
+				20FC25601CC8EA40008E2198 /* WeekTableViewCell.h */,
+				20FC25611CC8EA40008E2198 /* WeekTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20482EBC1CC7218700F6C3DA /* curly-pancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EEA1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancake" */;
+			buildPhases = (
+				20482EB91CC7218700F6C3DA /* Sources */,
+				20482EBA1CC7218700F6C3DA /* Frameworks */,
+				20482EBB1CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "curly-pancake";
+			productName = "curly-pancake";
+			productReference = 20482EBD1CC7218700F6C3DA /* curly-pancake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20482ED51CC7218700F6C3DA /* curly-pancakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EED1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeTests" */;
+			buildPhases = (
+				20482ED21CC7218700F6C3DA /* Sources */,
+				20482ED31CC7218700F6C3DA /* Frameworks */,
+				20482ED41CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20482ED81CC7218700F6C3DA /* PBXTargetDependency */,
+			);
+			name = "curly-pancakeTests";
+			productName = "curly-pancakeTests";
+			productReference = 20482ED61CC7218700F6C3DA /* curly-pancakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20482EE01CC7218700F6C3DA /* curly-pancakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20482EF01CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeUITests" */;
+			buildPhases = (
+				20482EDD1CC7218700F6C3DA /* Sources */,
+				20482EDE1CC7218700F6C3DA /* Frameworks */,
+				20482EDF1CC7218700F6C3DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20482EE31CC7218700F6C3DA /* PBXTargetDependency */,
+			);
+			name = "curly-pancakeUITests";
+			productName = "curly-pancakeUITests";
+			productReference = 20482EE11CC7218700F6C3DA /* curly-pancakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20482EB51CC7218700F6C3DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tianshikechuang;
+				TargetAttributes = {
+					20482EBC1CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					20482ED51CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 20482EBC1CC7218700F6C3DA;
+					};
+					20482EE01CC7218700F6C3DA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 20482EBC1CC7218700F6C3DA;
+					};
+				};
+			};
+			buildConfigurationList = 20482EB81CC7218700F6C3DA /* Build configuration list for PBXProject "curly-pancake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20482EB41CC7218700F6C3DA;
+			productRefGroup = 20482EBE1CC7218700F6C3DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20482EBC1CC7218700F6C3DA /* curly-pancake */,
+				20482ED51CC7218700F6C3DA /* curly-pancakeTests */,
+				20482EE01CC7218700F6C3DA /* curly-pancakeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20482EBB1CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482ED01CC7218700F6C3DA /* LaunchScreen.storyboard in Resources */,
+				20D1B5E51CC78F9400789D3D /* icon_tianjia@2x.png in Resources */,
+				20482ECD1CC7218700F6C3DA /* Assets.xcassets in Resources */,
+				20482ECB1CC7218700F6C3DA /* Main.storyboard in Resources */,
+				20D1B5E41CC78F9400789D3D /* icon_tianjia.png in Resources */,
+				20D1B5E61CC78F9400789D3D /* icon_tianjia@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED41CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDF1CC7218700F6C3DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20482EB91CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FC25651CC8EA40008E2198 /* MonthModel.m in Sources */,
+				20FC25711CC8EA40008E2198 /* WeekCollectionViewCell.m in Sources */,
+				20FC25701CC8EA40008E2198 /* UPCollectionViewCell.m in Sources */,
+				20FC256F1CC8EA40008E2198 /* TaskTableViewCell.m in Sources */,
+				20482EC81CC7218700F6C3DA /* ViewController.m in Sources */,
+				20FC25661CC8EA40008E2198 /* TaskModel.m in Sources */,
+				20482EC51CC7218700F6C3DA /* AppDelegate.m in Sources */,
+				2011A67C1CC9C099009C8FB2 /* DataTool.m in Sources */,
+				20FC256C1CC8EA40008E2198 /* HeadView.m in Sources */,
+				20FC25671CC8EA40008E2198 /* WeekModel.m in Sources */,
+				20482EC21CC7218700F6C3DA /* main.m in Sources */,
+				20FC25691CC8EA40008E2198 /* DateCollectionViewCell.m in Sources */,
+				20FC256B1CC8EA40008E2198 /* FYLayer.m in Sources */,
+				20FC25631CC8EA40008E2198 /* CPCalendarViewController.m in Sources */,
+				20FC25621CC8EA40008E2198 /* AddTableViewController.m in Sources */,
+				20FC256D1CC8EA40008E2198 /* MonthCollectionViewCell.m in Sources */,
+				20FC25641CC8EA40008E2198 /* DateModel.m in Sources */,
+				20FC256A1CC8EA40008E2198 /* DownCollectionViewCell.m in Sources */,
+				20FC25721CC8EA40008E2198 /* WeekTableViewCell.m in Sources */,
+				20FC25681CC8EA40008E2198 /* ToolCalendar.m in Sources */,
+				20FC256E1CC8EA40008E2198 /* TableHeadView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482ED21CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482EDB1CC7218700F6C3DA /* curly_pancakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20482EDD1CC7218700F6C3DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20482EE61CC7218700F6C3DA /* curly_pancakeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20482ED81CC7218700F6C3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20482EBC1CC7218700F6C3DA /* curly-pancake */;
+			targetProxy = 20482ED71CC7218700F6C3DA /* PBXContainerItemProxy */;
+		};
+		20482EE31CC7218700F6C3DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20482EBC1CC7218700F6C3DA /* curly-pancake */;
+			targetProxy = 20482EE21CC7218700F6C3DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20482EC91CC7218700F6C3DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20482ECA1CC7218700F6C3DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20482ECE1CC7218700F6C3DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20482ECF1CC7218700F6C3DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20482EE81CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20482EE91CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20482EEB1CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20482EEC1CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "curly-pancake/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20482EEE1CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "curly-pancakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/curly-pancake.app/curly-pancake";
+			};
+			name = Debug;
+		};
+		20482EEF1CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "curly-pancakeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/curly-pancake.app/curly-pancake";
+			};
+			name = Release;
+		};
+		20482EF11CC7218700F6C3DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "curly-pancakeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "curly-pancake";
+			};
+			name = Debug;
+		};
+		20482EF21CC7218700F6C3DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "curly-pancakeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zxw.curly-pancakeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "curly-pancake";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20482EB81CC7218700F6C3DA /* Build configuration list for PBXProject "curly-pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EE81CC7218700F6C3DA /* Debug */,
+				20482EE91CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20482EEA1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EEB1CC7218700F6C3DA /* Debug */,
+				20482EEC1CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20482EED1CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EEE1CC7218700F6C3DA /* Debug */,
+				20482EEF1CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20482EF01CC7218700F6C3DA /* Build configuration list for PBXNativeTarget "curly-pancakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20482EF11CC7218700F6C3DA /* Debug */,
+				20482EF21CC7218700F6C3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20482EB51CC7218700F6C3DA /* Project object */;
+}
