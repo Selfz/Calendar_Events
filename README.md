@@ -14,10 +14,10 @@
    * [期待](#期待)
 
 
-## <a id="curly-pancake是个什么"></a>curly-pancake是个什么
+## <a id="Calendar_Events是个什么"></a>Calendar_Events是个什么
 * 其实就是一个日历的视图控制器，可以用来做日程管理的。
 
-## <a id="如何使用curly-pancakh"></a>如何使用curly-pancak
+## <a id="如何使用Calendar_Events"></a>如何使用Calendar_Events
 * cocoapods导入：`pod 'Calendar_Events'`
 * 手动导入：
     * 将`curly-pancakh`文件夹中的所有文件拽入项目中
@@ -39,5 +39,5 @@
 ## <a id="期待"></a>期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
 * 如果在使用过程中发现功能不够用，希望你能Issues我，我非常想为这个框架增加更多好用的功能，谢谢
-* 如果你想为curly-pancake输出代码，请拼命Pull Requests我
+* 如果你想为Calendar_Events输出代码，请拼命Pull Requests我
 
