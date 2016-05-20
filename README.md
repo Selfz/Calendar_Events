@@ -1,11 +1,11 @@
 ![(logo)](http://a1.qpic.cn/psb?/V14KCrca0Bom6u/eZ7E9uvIqmpK6mHm9eRs2mmKSOz*HHlZ7Dh9yoFisj4!/b/dHEBAAAAAAAA&bo=gACAAAAAAAADByI!&rf=viewer_4)
-## curly-pancake
+## Calendar_Events
 * An easy way to use load Calendar view
 
 ## Contents
 * Getting Started
-    * [Features【curly-pancake是个什么】](#curly-pancake是个什么)
-    * [Installation【如何使用curly-pancake】](#如何使用curly-pancak)
+    * [Features【Calendar_Events是个什么】](#Calendar_Events是个什么)
+    * [Installation【如何使用Calendar_Events】](#如何使用Calendar_Events)
 
 
 * Examples
@@ -18,7 +18,7 @@
 * 其实就是一个日历的视图控制器，可以用来做日程管理的。
 
 ## <a id="如何使用curly-pancakh"></a>如何使用curly-pancak
-* cocoapods导入：`pod 'curly-pancakh'`
+* cocoapods导入：`pod 'Calendar_Events'`
 * 手动导入：
     * 将`curly-pancakh`文件夹中的所有文件拽入项目中
     * 导入主头文件：`#import "CPCalendarViewController.h"`
@@ -34,6 +34,7 @@
 
 ## <a id="提醒"></a>提醒
 * 本框架纯ARC，暂时不支持横屏展示,
+* 本项目之前的项目名称为curly-pancakh，如今改为了Calendar_Events，所以项目中，应该是还有相关的内容，请注意了！
 
 ## <a id="期待"></a>期待
 * 如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）
